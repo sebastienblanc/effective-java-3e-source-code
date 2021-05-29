@@ -47,6 +47,14 @@ public class NutritionFacts {
         sodium       = builder.sodium;
         carbohydrate = builder.carbohydrate;
     }
+    
+    @Override
+    public String toString() {
+        return "NutritionFacts [calories=" + calories + ", carbohydrate=" + carbohydrate + ", fat=" + fat
+                + ", servingSize=" + servingSize + ", servings=" + servings + ", sodium=" + sodium + "]";
+    }
+
+
 
     public static void main(String[] args) {
         NutritionFacts cocaCola = new NutritionFacts.Builder(240, 8)
